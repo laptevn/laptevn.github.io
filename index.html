@@ -20,6 +20,8 @@
     <!-- End Google Analytics -->
 
     <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/popup.css">
   </head>
 
   <body class="font-hacker">
@@ -55,12 +57,98 @@
       </div>
       <div class="container-lrg">
         <div class="flex center-horizontal wrap center-vertical">
-          <div class="col-3 mobile-col-6 mt20"><a href="https://ibm.com/" target="_blank"><img src="images/ibm.svg" class="press-logo"></a></div>
-          <div class="col-3 mobile-col-6 mt20"><a href="http://accenture.com" target="_blank"><img src="images/accenture.svg" class="press-logo"></a></div>
-          <div class="col-3 mobile-col-6 mt20"><a href="https://n26.com" target="_blank"><img src="images/n26.png" class="press-logo"></a></div>
-          <div class="col-3 mobile-col-6 mt20"><a href="https://www.jivesoftware.com/" target="_blank"><img src="images/jive.png" class="press-logo"></a></div>
-          <div class="col-3 mobile-col-6 mt20"><a href="https://www.upwork.com/" target="_blank"><img src="images/upwork.svg" class="press-logo"></a></div>
-          <div class="col-3 mobile-col-6 mt20"><a href="https://www.aciworldwide.com/" target="_blank"><img src="images/aci.jpeg" class="press-logo"></a></div>
+          <div class="col-3 mobile-col-6 mt20"><img src="images/ibm.svg" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('ibm_details').style.display='block'"></div>
+          <div class="col-3 mobile-col-6 mt20"><img src="images/accenture.svg" class="press-logo, w3-hover-opacity clickable-image" onclick="document.getElementById('accenture_details').style.display='block'"></div>
+          <div class="col-3 mobile-col-6 mt20"><img src="images/n26.png" class="press-logo, w3-hover-opacity clickable-image" onclick="document.getElementById('n26_details').style.display='block'"></div>
+          <div class="col-3 mobile-col-6 mt20"><img src="images/jive.png" class="press-logo, w3-hover-opacity clickable-image" onclick="document.getElementById('jive_details').style.display='block'"></div>
+          <div class="col-3 mobile-col-6 mt20"><img src="images/upwork.svg" class="press-logo, w3-hover-opacity clickable-image" onclick="document.getElementById('upwork_details').style.display='block'"></div>
+          <div class="col-3 mobile-col-6 mt20"><img src="images/aci.jpeg" class="press-logo, w3-hover-opacity clickable-image" onclick="document.getElementById('aci_details').style.display='block'"></div>
+        </div>
+      </div>
+      <div id="ibm_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <p class="bold primary-color">Activities:</p>
+            <p class="paragraph secondary-color">1. Technical guidance of contractors.</p>
+            <p class="paragraph secondary-color">2. Increased code coverage from 0 to 80%, introduced integration testing.</p>
+            <p class="paragraph secondary-color">3. Redesigned core part of a system to make it more testable, extensible and maintainable.</p>
+            <p class="paragraph secondary-color">4. Made the system consistent and removed concurrency issues.</p>
+            <p class="paragraph secondary-color">5. Improved a performance of the most popular use cases in 3 times.</p>
+            <p class="paragraph secondary-color">6. Final vote on choosing technical approaches.</p>
+            <br />
+            <p class="bold primary-color">Development environment:</p>
+            <p class="paragraph secondary-color">IBM Java (J9), Eclipse IDE, Eclipse RCP, Eclipse Equinox, OSGI, RTC, REST, Apache Jena, JUnit.</p>
+          </div>
+        </div>
+      </div>
+      <div id="accenture_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <p class="bold primary-color">Activities:</p>
+            <p class="paragraph secondary-color">1. Created a plan to solve quality issues in one SaaS product including creation of standards and acceptance criteria.</p>
+            <p class="paragraph secondary-color">2. Lead an acceptance of the plan from stakeholders, provided constant assistance during plan implementation.</p>
+            <p class="paragraph secondary-color">3. Acted as a technical expert in that product.</p>
+            <p class="paragraph secondary-color">4. Acted as a security expert in all products.</p>
+            <p class="paragraph secondary-color">5. Migrated Jenkins based CI builds for a core project to CD pipeline including cleaning ineffective solutions and adapting to new project requirements.</p>
+            <br />
+            <p class="bold primary-color">Development environment:</p>
+            <p class="paragraph secondary-color">SAP Cloud Platform, Cloud Foundry, Java, Jenkins, Docker.</p>
+          </div>
+        </div>
+      </div>
+      <div id="n26_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <p class="bold primary-color">Activities:</p>
+            <p class="paragraph secondary-color">1. Identified bottlenecks and created a plan of improvements.</p>
+            <p class="paragraph secondary-color">2. Removed redundancy from development process.</p>
+            <p class="paragraph secondary-color">3. Introduced measuring performance of a team and individual contributors.</p>
+            <p class="paragraph secondary-color">4. Fixed broken Continuous Delivery pipeline for several services.</p>
+            <p class="paragraph secondary-color">5. Provided technical guidance for introducing support of US market.</p>
+            <br />
+            <p class="bold primary-color">Development environment:</p>
+            <p class="paragraph secondary-color">AWS, Docker, Java, Spring, Netflix OSS, Jenkins, Microservices.</p>
+          </div>
+        </div>
+      </div>
+      <div id="jive_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <p class="bold primary-color">Activities:</p>
+            <p class="paragraph secondary-color">1. Implemented the most complex and critical tasks for several projects. Customers had been waiting for 2+ years for completion of some of them.</p>
+            <p class="paragraph secondary-color">2. Organised delivery process from resource and product perspective for lack of resource and product management for several projects.</p>
+            <p class="paragraph secondary-color">3. Guarded high technical quality in products.</p>
+            <br />
+            <p class="bold primary-color">Development environment:</p>
+            <p class="paragraph secondary-color">Java, Spring, Apache Struts, JUnit, Postgresql, Apache Kafka, Jenkins, Docker, Maven, Intellij Idea.</p>
+          </div>
+        </div>
+      </div>
+      <div id="upwork_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <p class="bold primary-color">Activities:</p>
+            <p class="paragraph secondary-color">Designed and implemented a core part of A/B testing system for Upwork platform.</p>
+            <br />
+            <p class="bold primary-color">Development environment:</p>
+            <p class="paragraph secondary-color">Java, Dropwizard, AWS(EC2, DynamoDB, Redshift), Netflix OSS (Eureka, Hystrix, EVCache), Docker, Elastic Kibana, Grafana, REST, JUnit, PITest, Intellij Idea, Microservices.</p>
+          </div>
+        </div>
+      </div>
+      <div id="aci_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <p class="bold primary-color">Activities:</p>
+            <p class="paragraph secondary-color">1. Lead several teams of 3 software engineers and QAs.</p>
+            <p class="paragraph secondary-color">2. Final vote on choosing technical and organisational approaches.</p>
+            <p class="paragraph secondary-color">3. Implemented core parts of payments framework that is used by top 60 banks in the world.</p>
+            <p class="paragraph secondary-color">4. Created a system for automated functional testing of online banking that made hundreds of manual QAs redundant.</p>
+            <p class="paragraph secondary-color">5. Lead migration from .Net to Java stack for office employees including organising trainings and workshops.</p>
+            <p class="paragraph secondary-color">6. Interviewed core people for a new office.</p>
+            <br />
+            <p class="bold primary-color">Development environment:</p>
+            <p class="paragraph secondary-color">Java, Perl, Groovy, Oracle, Maven, Sonar, Bamboo, JUnit, Selenium, JMockit, Jira, Intellij Idea IDE, Eclipse IDE, Netbeans IDE, Linux (Red Hat).</p>
+          </div>
         </div>
       </div>
     </section>

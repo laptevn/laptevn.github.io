@@ -52,7 +52,7 @@
           $('#submit-form')[0].reset();
           $.ajax({
             type: "POST",
-            url: "https://api.laptev.co/v1",
+            url: "https://cors-anywhere.herokuapp.com/https://api.laptev.co/v1",
             data: dataString,
             success: function (data) {
               // $('#submit-form')[0].reset();

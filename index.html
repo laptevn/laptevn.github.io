@@ -9,7 +9,6 @@
     <meta property="og:image" content="">
     <link rel="shortcut icon" href="images/favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:900" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <!-- Google Analytics -->
     <script>
@@ -42,31 +41,8 @@
 
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $("#submit-form").on('submit', function (event) {
-          console.log("On submit");
-          event.preventDefault();
-          var dataString = $(this).serialize();
-          $('#submit-form')[0].reset();
-          $.ajax({
-            type: "POST",
-            url: "https://api.laptev.co/v1",
-            data: dataString,
-            success: function (data) {
-              // $('#submit-form')[0].reset();
-              console.log("Success request");
-            }
-          }).done(function (data) {
-            // setTimeout(function () {
-            //   alert("Form submitted successfully! We'll get back to you soon. Thank you.");
-            // }, 2000);
-            console.log("Finished request");
-          });
-        });
-      });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="scripts/submit.min.js"></script>
   </head>
 
   <body class="font-hacker">
@@ -269,7 +245,7 @@
       <div class="container-lrg">
         <div class="flex center-horizontal wrap center-vertical">
           <div class="col-3 mobile-col-6 mt20"><a href="https://www.youracclaim.com/badges/6b4eb0cd-b984-48c3-af84-90ad1cc3019d/public_url" target="_blank"><img src="images/ocp.png" class="press-logo"></a></div>
-          <div class="col-3 mobile-col-6 mt20"><a target="_blank"><img src="images/oca.jpeg" class="press-logo"></a></div>
+          <div class="col-3 mobile-col-6 mt20"><a href="https://www.youracclaim.com/badges/8db8b73a-b0a7-4689-8ec4-d1c9d7ccc780/public_url" target="_blank"><img src="images/oca.jpeg" class="press-logo"></a></div>
           <div class="col-3 mobile-col-6 mt20"><a target="_blank"><img src="images/ibm_pm.png" class="press-logo"></a></div>
           <div class="col-3 mobile-col-6 mt20"><a href="https://www.coursera.org/account/accomplishments/verify/YXSJU53FRUHK" target="_blank"><img src="images/ml.jpg" class="press-logo"></a></div>
           <div class="col-3 mobile-col-6 mt20"><a href="https://www.youracclaim.com/badges/d24a9ad1-3ab1-4432-95de-aa87e45cd6d2" target="_blank"><img src="images/ibm_bd_badge.png" class="press-logo"></a></div>
@@ -359,10 +335,10 @@
                 <label for="attached-details">Optional file with details</label>
                 <input type="file" class="form-control-file" id="attached-details" name="attached-details">
               </div>
-              <div id="feedback" class="paragraph primary-color pad10" style = "display:none">
-                  <span> Success! </span>
+              <div id="feedback" style = "display:none">
+                  <span style="color:#008000"> Thank you. I've received your submission and will handle it within 1 business day. </span>
               </div>
-              <button class="button mt10 builder-hoverable button__full mobile-text-center accent-bg primary-color"><span> Submit </span></button>
+              <button id="submit-button" class="button mt10 builder-hoverable button__full mobile-text-center accent-bg primary-color"><span> Submit </span></button>
             </form>
           </div>
         </div>

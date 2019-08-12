@@ -5,6 +5,10 @@ $(document).ready(function () {
         var form = $('#submit-form')[0];
         var data = new FormData(form);
 
+        if (!$("#attached-details").val()) {
+            data.delete('attached-details');
+        }
+
         $('#submit-button').prop('disabled', true);
 
         $.ajax({
@@ -14,7 +18,7 @@ $(document).ready(function () {
             processData: false,
             contentType: false,
             cache: false,
-            timeout: 600000,
+            timeout: 60000,
             success: function (data) {
                 $('#submit-form')[0].reset();
             }

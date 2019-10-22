@@ -472,6 +472,13 @@ var ShowController = Class.create({
 
     handleSwipeEvent: function(event) {
         var memo = event.memo;
+        var direction = memo.direction;
+
+        // if the navigator is showing then hide it when swiping either left or right
+        if (this.displayManager.navigatorIsShowing && (direction === "left" || direction === "right")) {
+            this.navigatorController.thumbnailSidebar.hide(this.navigatorController.leftSidebar);
+            return;
+        }
 
         // Toggle the slide navigator if swipe event is in navigator area.
         // The thumbnail scroller is 129px. For now we use 150px but can be adjusted later if needed.

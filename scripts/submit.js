@@ -13,7 +13,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: "POST",
-            url: "https://24uy8co9c6.execute-api.us-east-2.amazonaws.com/api",
+            url: "https://api.laptev.io/v1",
             data: data,
             processData: false,
             contentType: false,

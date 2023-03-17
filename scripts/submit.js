@@ -1,6 +1,9 @@
 $(document).ready(function () {
     $("#submit-form").on('submit', function (event) {
         event.preventDefault();
+
+        $("#feedback").hide();
+        $("#error-big-file").hide();
         
         var form = $('#submit-form')[0];
         var data = new FormData(form);

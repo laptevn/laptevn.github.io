@@ -13,7 +13,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: "POST",
-            url: "https://api.laptev.co/v1",
+            url: "https://api.laptev.io/v1",
             data: data,
             processData: false,
             contentType: false,

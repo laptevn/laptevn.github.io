@@ -23,11 +23,9 @@ $(document).ready(function () {
                 $('#submit-form')[0].reset();
                 $("#feedback").show();
             },
-            statusCode: {
-                413: function() {
-                    $("#error-big-file").show();
-                }
-              }
+            error: function (data) {
+                $("#error-big-file").show();
+            }
         }).always(function (data) {
             $('#submit-button').prop('disabled', false);
         });

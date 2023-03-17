@@ -22,8 +22,14 @@ $(document).ready(function () {
             success: function (data) {
                 $('#submit-form')[0].reset();
             }
-        }).always(function (data) {
+        })
+        .done(function (data) {
             $("#feedback").show();
+        })
+        .fail(function (data) {
+            $("#error-big-file").show();
+        })
+        .always(function (data) {
             $('#submit-button').prop('disabled', false);
         });
     });

@@ -21,15 +21,14 @@ $(document).ready(function () {
             timeout: 60000,
             success: function (data) {
                 $('#submit-form')[0].reset();
-            }
-        })
-        .done(function (data) {
-            $("#feedback").show();
-        })
-        .fail(function (data) {
-            $("#error-big-file").show();
-        })
-        .always(function (data) {
+                $("#feedback").show();
+            },
+            statusCode: {
+                413: function() {
+                    $("#error-big-file").show();
+                }
+              }
+        }).always(function (data) {
             $('#submit-button').prop('disabled', false);
         });
     });

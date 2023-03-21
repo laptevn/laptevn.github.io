@@ -10,15 +10,6 @@
     <link rel="shortcut icon" href="images/favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:900" rel="stylesheet">
 
-    <!-- Google Analytics -->
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-144914376-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-    <script async src='https://www.google-analytics.com/analytics.js'></script>
-    <!-- End Google Analytics -->
-
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -47,7 +38,7 @@
         <div class="container mb40">
           <div class="col-12 text-center">
             <h1 class="heading-lrg primary-color">Need help with software project?</h1>
-            <h2 class="subheading secondary-color mt20">I help companies to fill gaps in experience by solving sophisticated problems and training teams to solve them</h2>
+            <h2 class="subheading secondary-color mt20">I help companies to fill gaps in experience by solving hard technical and architectural problems and training teams to solve them</h2>
             <div class="mt40">
               <a href="#submit-task" class="button mt10 mr10 mobile-text-center accent-bg primary-color"> <span> Share your problem </span></a>
               <a href="files/resume.pdf" target="_blank" class="button mobile-text-center mt10" onclick="ga('send', 'event', 'Resume', 'Opened');"> <span> Detailed resume </span></a>
@@ -67,11 +58,17 @@
       <div class="container-lrg">
         <div class="flex center-horizontal wrap center-vertical">
           <div class="col-3 mobile-col-6 mt20"><img src="images/ibm.svg" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('ibm_details').style.display='block'"></div>
+          <div class="col-3 mobile-col-6 mt20"><img src="images/tr.jpg" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('tr_details').style.display='block'"></div>
+          <div class="col-3 mobile-col-6 mt20"><img src="images/inditex.png" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('inditex_details').style.display='block'"></div>
+          <div class="col-3 mobile-col-6 mt20"><img src="images/allianz.png" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('allianz_details').style.display='block'"></div>
           <div class="col-3 mobile-col-6 mt20"><img src="images/accenture.svg" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('accenture_details').style.display='block'"></div>
           <div class="col-3 mobile-col-6 mt20"><img src="images/n26.png" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('n26_details').style.display='block'"></div>
           <div class="col-3 mobile-col-6 mt20"><img src="images/jive.png" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('jive_details').style.display='block'"></div>
           <div class="col-3 mobile-col-6 mt20"><img src="images/upwork.svg" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('upwork_details').style.display='block'"></div>
           <div class="col-3 mobile-col-6 mt20"><img src="images/aci.jpeg" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('aci_details').style.display='block'"></div>
+          <div class="col-3 mobile-col-6 mt20"><img src="images/s7.png" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('s7_details').style.display='block'"></div>
+          <div class="col-3 mobile-col-6 mt20"><img src="images/df.png" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('df_details').style.display='block'"></div>
+          <div class="col-3 mobile-col-6 mt20"><img src="images/pe.png" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('pe_details').style.display='block'"></div>
         </div>
       </div>
       <div id="ibm_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
@@ -87,6 +84,44 @@
             <br />
             <p class="bold primary-color">Development environment:</p>
             <p class="paragraph secondary-color">IBM Java (J9), Eclipse IDE, Eclipse RCP, Eclipse Equinox, OSGI, RTC, REST, Apache Jena, JUnit.</p>
+          </div>
+        </div>
+      </div>
+      <div id="tr_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <p class="bold primary-color">Activities:</p>
+            <p class="paragraph secondary-color">1. Root cause analysis of performance and stability issues in OneSourceTax product.</p>
+            <p class="paragraph secondary-color">2. Created a plan for improvements and drove it till completion.</p>
+            <p class="paragraph secondary-color">3. Defined data management strategy.</p>
+            <br />
+            <p class="bold primary-color">Development environment:</p>
+            <p class="paragraph secondary-color">AWS (Lambda, EC2, S3, RDS, PostgreSQL, SQS, SNS, StepFunctions), DataDog, LucidChart, Go, pgbench, sysbench.</p>
+          </div>
+        </div>
+      </div>
+      <div id="inditex_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <p class="bold primary-color">Activities:</p>
+            <p class="paragraph secondary-color">1. Assessed MVP version of a system to distribute clothes between its stores.</p>
+            <p class="paragraph secondary-color">2. Brought MVP to fully functional and production ready service.</p>
+            <p class="paragraph secondary-color">3. Fixed core issues in system architecture.</p>
+            <p class="paragraph secondary-color">4. Improved security, scalability, availability, resilience and performance.</p>
+            <br />
+            <p class="bold primary-color">Development environment:</p>
+            <p class="paragraph secondary-color">LucidChart, Java, OpenShift, MongoDB, JMeter, InfluxDB, Grafana, Graylog.</p>
+          </div>
+        </div>
+      </div>
+      <div id="allianz_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <p class="bold primary-color">Activities:</p>
+            <p class="paragraph secondary-color">Created a high level architecture of OneFront and estimated implementation effort for it for a tender. The client liked it and moved further with me.</p>
+            <br />
+            <p class="bold primary-color">Development environment:</p>
+            <p class="paragraph secondary-color">Private Cloud, LucidChart.</p>
           </div>
         </div>
       </div>
@@ -157,6 +192,48 @@
             <br />
             <p class="bold primary-color">Development environment:</p>
             <p class="paragraph secondary-color">Java, Perl, Groovy, Oracle, Maven, Sonar, Bamboo, JUnit, Selenium, JMockit, Jira, Intellij Idea IDE, Eclipse IDE, Netbeans IDE, Linux (Red Hat).</p>
+          </div>
+        </div>
+      </div>
+      <div id="s7_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <p class="bold primary-color">Activities:</p>
+            <p class="paragraph secondary-color">1. Extracted architecture vision from heads and visualised it for 7 products.</p>
+            <p class="paragraph secondary-color">2. Recommended improvements for 7 products.</p>
+            <p class="paragraph secondary-color">3. Designed notifications platform from scratch that sends messages to 12+ millions of passengers.</p>
+            <p class="paragraph secondary-color">4. Technical guidance for all products in the company and child companies.</p>
+            <p class="paragraph secondary-color">5. Organised and lead learning activities to fill gaps in architecture skills in development teams.</p>
+            <p class="paragraph secondary-color">6. Assisted with root cause analysis for the most sophisticated issues happening in the company daily.</p>
+            <br />
+            <p class="bold primary-color">Development environment:</p>
+            <p class="paragraph secondary-color">Kubernetes, Kafka, Apache Airflow, Java, PostgreSQL, Redis, RedisGraph, ElasticSearch, Hazelcast, MongoDB, LucidChart.</p>
+          </div>
+        </div>
+      </div>
+      <div id="df_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <p class="bold primary-color">Activities:</p>
+            <p class="paragraph secondary-color">1. Made the most important technical decisions in data driven way in child companies with a portfolio of hundreds of products (including Jive, FogBugz, Sococo, BiznessApps, Engine Yard, Kayako, CloudFix).</p>
+            <p class="paragraph secondary-color">2. Technical due diligence during pre-acquisitions.</p>
+            <p class="paragraph secondary-color">3. Architecture governance for all products.</p>
+            <p class="paragraph secondary-color">4. Simplified overgrown products dramatically by concentrating on core value.</p>
+            <p class="paragraph secondary-color">5. Saved millions with cost optimisations in AWS infrastructure practising FinOps.</p>
+          </div>
+        </div>
+      </div>
+      <div id="pe_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <p class="bold primary-color">Activities:</p>
+            <p class="paragraph secondary-color">1. Designed a system that provides a quick search over 2 PBs of genomic variants and analyses.</p>
+            <p class="paragraph secondary-color">2. Lead MVP implementation.</p>
+            <p class="paragraph secondary-color">3. Resulting system will decrease the price of genetic analysis by 30%.</p>
+            <p class="paragraph secondary-color">4. Designed system provisioning in both US and China AWS regions.</p>
+            <br />
+            <p class="bold primary-color">Development environment:</p>
+            <p class="paragraph secondary-color">AWS (EC2, RDS, ElasticSearch, CloudWatch, S3, CloudFormation), Terraform, Java, LucidChart, Gatling, GitLab, Jenkins.</p>
           </div>
         </div>
       </div>
@@ -261,7 +338,7 @@
               Where are you located?
             </b>
             <p class="paragraph secondary-color">
-              I live in Germany and work remotely. I'm open to onsite collaboration too.
+              I live in Georgia and work remotely. I'm open to onsite collaboration too.
             </p>
           </div>
           <div class="faq pad20"><b class="bold primary-color">

@@ -1,434 +1,560 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Nickolay Laptev</title>
-    <meta charSet="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Need help with software project?">
-    <meta property="og:image" content="">
-    <link rel="shortcut icon" href="images/favicon.ico" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:900" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/styles.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="scripts/submit.min.js"></script>
+<head>
+  <title>Nickolay Laptev</title>
+  <meta charSet="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Need help with software project?">
+  <meta property="og:image" content="">
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:900" rel="stylesheet">
 
-    <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "ga2yoehsl0");
+  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="scripts/submit.min.js"></script>
+
+  <script type="text/javascript">
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+      t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "ga2yoehsl0");
   </script>
-  </head>
 
-  <body class="font-hacker">
-    <div class="gray-flat">
-      <!---->
-      <header class="header">
-        <div class="container-lrg">
-          <div class="flex col-12 spread"><a class="logo primary-color logo">Nickolay Laptev</a>
-            <!---->
-          </div>
-        </div>
-      </header>
-      <section class="section">
-        <div class="container mb40">
-          <div class="col-12 text-center">
-            <h1 class="heading-lrg primary-color">Need help with software project?</h1>
-            <h2 class="subheading secondary-color mt20">I solve hard technical and architectural problems and train teams to solve them</h2>
-            <div class="mt40">
-              <a href="#submit-task" class="button mt10 mr10 mobile-text-center accent-bg primary-color"> <span> Share your problem </span></a>
-              <a href="files/resume.pdf" target="_blank" class="button mobile-text-center mt10"> <span> Detailed resume </span></a>
-            </div>
-          </div>
-        </div>
-        <!---->
-      </section>
-    </div>
-    <section id="featuredin-1" class="section gray-white" sitemeta="[object Object]" activepage="Landing">
-      <div class="container text-center mb50">
-        <div class="col-12">
-          <h4 class="heading primary-color">Companies I helped</h4>
-          <p class="subheading secondary-color mt20 builder-hoverable">Click an image to see details</p>
-        </div>
-      </div>
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+</head>
+
+<body class="font-hacker">
+  <div class="gray-flat">
+    <!---->
+    <header class="header">
       <div class="container-lrg">
-        <div class="flex center-horizontal wrap center-vertical">
-          <div class="col-3 mobile-col-6 mt20"><img src="images/ibm.svg" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('ibm_details').style.display='block'"></div>
-          <div class="col-3 mobile-col-6 mt20"><img src="images/tr.jpg" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('tr_details').style.display='block'"></div>
-          <div class="col-3 mobile-col-6 mt20"><img src="images/inditex.png" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('inditex_details').style.display='block'"></div>
-          <div class="col-3 mobile-col-6 mt20"><img src="images/allianz.png" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('allianz_details').style.display='block'"></div>
-          <div class="col-3 mobile-col-6 mt20"><img src="images/accenture.svg" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('accenture_details').style.display='block'"></div>
-          <div class="col-3 mobile-col-6 mt20"><img src="images/n26.png" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('n26_details').style.display='block'"></div>
-          <div class="col-3 mobile-col-6 mt20"><img src="images/jive.png" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('jive_details').style.display='block'"></div>
-          <div class="col-3 mobile-col-6 mt20"><img src="images/upwork.svg" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('upwork_details').style.display='block'"></div>
-          <div class="col-3 mobile-col-6 mt20"><img src="images/aci.jpeg" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('aci_details').style.display='block'"></div>
-          <div class="col-3 mobile-col-6 mt20"><img src="images/s7.png" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('s7_details').style.display='block'"></div>
-          <div class="col-3 mobile-col-6 mt20"><img src="images/df.png" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('df_details').style.display='block'"></div>
-          <div class="col-3 mobile-col-6 mt20"><img src="images/pe.png" class="press-logo w3-hover-opacity clickable-image" onclick="document.getElementById('pe_details').style.display='block'"></div>
-        </div>
-      </div>
-      <div id="ibm_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
-        <div class="w3-modal-content">
-          <div class="w3-container">
-            <p class="bold primary-color">Activities:</p>
-            <p class="paragraph secondary-color">1. Technical guidance of contractors.</p>
-            <p class="paragraph secondary-color">2. Increased code coverage from 0 to 80%, introduced integration testing.</p>
-            <p class="paragraph secondary-color">3. Redesigned core part of a system to make it more testable, extensible and maintainable.</p>
-            <p class="paragraph secondary-color">4. Made the system consistent and removed concurrency issues.</p>
-            <p class="paragraph secondary-color">5. Improved a performance of the most popular use cases in 3 times.</p>
-            <p class="paragraph secondary-color">6. Final vote on choosing technical approaches.</p>
-            <br />
-            <p class="bold primary-color">Development environment:</p>
-            <p class="paragraph secondary-color">IBM Java (J9), Eclipse IDE, Eclipse RCP, Eclipse Equinox, OSGI, RTC, REST, Apache Jena, JUnit.</p>
-          </div>
-        </div>
-      </div>
-      <div id="tr_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
-        <div class="w3-modal-content">
-          <div class="w3-container">
-            <p class="bold primary-color">Activities:</p>
-            <p class="paragraph secondary-color">1. Root cause analysis of performance and stability issues in OneSourceTax product.</p>
-            <p class="paragraph secondary-color">2. Created a plan for improvements and drove it till completion.</p>
-            <p class="paragraph secondary-color">3. Defined data management strategy.</p>
-            <br />
-            <p class="bold primary-color">Development environment:</p>
-            <p class="paragraph secondary-color">AWS (Lambda, EC2, S3, RDS, PostgreSQL, SQS, SNS, StepFunctions), DataDog, LucidChart, Go, pgbench, sysbench.</p>
-          </div>
-        </div>
-      </div>
-      <div id="inditex_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
-        <div class="w3-modal-content">
-          <div class="w3-container">
-            <p class="bold primary-color">Activities:</p>
-            <p class="paragraph secondary-color">1. Assessed MVP version of a system to distribute clothes between its stores.</p>
-            <p class="paragraph secondary-color">2. Brought MVP to fully functional and production ready service.</p>
-            <p class="paragraph secondary-color">3. Fixed core issues in system architecture.</p>
-            <p class="paragraph secondary-color">4. Improved security, scalability, availability, resilience and performance.</p>
-            <br />
-            <p class="bold primary-color">Development environment:</p>
-            <p class="paragraph secondary-color">LucidChart, Java, OpenShift, MongoDB, JMeter, InfluxDB, Grafana, Graylog.</p>
-          </div>
-        </div>
-      </div>
-      <div id="allianz_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
-        <div class="w3-modal-content">
-          <div class="w3-container">
-            <p class="bold primary-color">Activities:</p>
-            <p class="paragraph secondary-color">Created a high level architecture of OneFront and estimated implementation effort for it for a tender. The client liked it and moved further with me.</p>
-            <br />
-            <p class="bold primary-color">Development environment:</p>
-            <p class="paragraph secondary-color">Private Cloud, LucidChart.</p>
-          </div>
-        </div>
-      </div>
-      <div id="accenture_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
-        <div class="w3-modal-content">
-          <div class="w3-container">
-            <p class="bold primary-color">Activities:</p>
-            <p class="paragraph secondary-color">1. Created a plan to solve quality issues in one SaaS product including creation of standards and acceptance criteria.</p>
-            <p class="paragraph secondary-color">2. Lead an acceptance of the plan from stakeholders, provided constant assistance during plan implementation.</p>
-            <p class="paragraph secondary-color">3. Acted as a technical expert in that product.</p>
-            <p class="paragraph secondary-color">4. Acted as a security expert in all products.</p>
-            <p class="paragraph secondary-color">5. Migrated Jenkins based CI builds for a core project to CD pipeline including cleaning ineffective solutions and adapting to new project requirements.</p>
-            <br />
-            <p class="bold primary-color">Development environment:</p>
-            <p class="paragraph secondary-color">SAP Cloud Platform, Cloud Foundry, Java, Jenkins, Docker.</p>
-          </div>
-        </div>
-      </div>
-      <div id="n26_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
-        <div class="w3-modal-content">
-          <div class="w3-container">
-            <p class="bold primary-color">Activities:</p>
-            <p class="paragraph secondary-color">1. Identified bottlenecks and created a plan of improvements.</p>
-            <p class="paragraph secondary-color">2. Removed redundancy from development process.</p>
-            <p class="paragraph secondary-color">3. Introduced measuring performance of a team and individual contributors.</p>
-            <p class="paragraph secondary-color">4. Fixed broken Continuous Delivery pipeline for several services.</p>
-            <p class="paragraph secondary-color">5. Provided technical guidance for introducing support of US market.</p>
-            <br />
-            <p class="bold primary-color">Development environment:</p>
-            <p class="paragraph secondary-color">AWS, Docker, Java, Spring, Netflix OSS, Jenkins, Microservices.</p>
-          </div>
-        </div>
-      </div>
-      <div id="jive_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
-        <div class="w3-modal-content">
-          <div class="w3-container">
-            <p class="bold primary-color">Activities:</p>
-            <p class="paragraph secondary-color">1. Implemented the most complex and critical tasks for several projects. Customers had been waiting for 2+ years for completion of some of them.</p>
-            <p class="paragraph secondary-color">2. Organised delivery process from resource and product perspective for lack of resource and product management for several projects.</p>
-            <p class="paragraph secondary-color">3. Guarded high technical quality in products.</p>
-            <br />
-            <p class="bold primary-color">Development environment:</p>
-            <p class="paragraph secondary-color">Java, Spring, Apache Struts, JUnit, Postgresql, Apache Kafka, Jenkins, Docker, Maven, Intellij Idea.</p>
-          </div>
-        </div>
-      </div>
-      <div id="upwork_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
-        <div class="w3-modal-content">
-          <div class="w3-container">
-            <p class="bold primary-color">Activities:</p>
-            <p class="paragraph secondary-color">Designed and implemented a core part of A/B testing system for Upwork platform.</p>
-            <br />
-            <p class="bold primary-color">Development environment:</p>
-            <p class="paragraph secondary-color">Java, Dropwizard, AWS(EC2, DynamoDB, Redshift), Netflix OSS (Eureka, Hystrix, EVCache), Docker, Elastic Kibana, Grafana, REST, JUnit, PITest, Intellij Idea, Microservices.</p>
-          </div>
-        </div>
-      </div>
-      <div id="aci_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
-        <div class="w3-modal-content">
-          <div class="w3-container">
-            <p class="bold primary-color">Activities:</p>
-            <p class="paragraph secondary-color">1. Lead several teams of 3 software engineers and QAs.</p>
-            <p class="paragraph secondary-color">2. Final vote on choosing technical and organisational approaches.</p>
-            <p class="paragraph secondary-color">3. Implemented core parts of payments framework that is used by top 60 banks in the world.</p>
-            <p class="paragraph secondary-color">4. Created a system for automated functional testing of online banking that made hundreds of manual QAs redundant.</p>
-            <p class="paragraph secondary-color">5. Lead migration from .Net to Java stack for office employees including organising trainings and workshops.</p>
-            <p class="paragraph secondary-color">6. Interviewed core people for a new office.</p>
-            <br />
-            <p class="bold primary-color">Development environment:</p>
-            <p class="paragraph secondary-color">Java, Perl, Groovy, Oracle, Maven, Sonar, Bamboo, JUnit, Selenium, JMockit, Jira, Intellij Idea IDE, Eclipse IDE, Netbeans IDE, Linux (Red Hat).</p>
-          </div>
-        </div>
-      </div>
-      <div id="s7_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
-        <div class="w3-modal-content">
-          <div class="w3-container">
-            <p class="bold primary-color">Activities:</p>
-            <p class="paragraph secondary-color">1. Extracted architecture vision from heads and visualised it for 7 products.</p>
-            <p class="paragraph secondary-color">2. Recommended improvements for 7 products.</p>
-            <p class="paragraph secondary-color">3. Designed notifications platform from scratch that sends messages to 12+ millions of passengers.</p>
-            <p class="paragraph secondary-color">4. Technical guidance for all products in the company and child companies.</p>
-            <p class="paragraph secondary-color">5. Organised and lead learning activities to fill gaps in architecture skills in development teams.</p>
-            <p class="paragraph secondary-color">6. Assisted with root cause analysis for the most sophisticated issues happening in the company daily.</p>
-            <br />
-            <p class="bold primary-color">Development environment:</p>
-            <p class="paragraph secondary-color">Kubernetes, Kafka, Apache Airflow, Java, PostgreSQL, Redis, RedisGraph, ElasticSearch, Hazelcast, MongoDB, LucidChart.</p>
-          </div>
-        </div>
-      </div>
-      <div id="df_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
-        <div class="w3-modal-content">
-          <div class="w3-container">
-            <p class="bold primary-color">Activities:</p>
-            <p class="paragraph secondary-color">1. Made the most important technical decisions in data driven way in child companies with a portfolio of hundreds of products (including Jive, FogBugz, Sococo, BiznessApps, Engine Yard, Kayako, CloudFix).</p>
-            <p class="paragraph secondary-color">2. Technical due diligence during pre-acquisitions.</p>
-            <p class="paragraph secondary-color">3. Architecture governance for all products.</p>
-            <p class="paragraph secondary-color">4. Simplified overgrown products dramatically by concentrating on core value.</p>
-            <p class="paragraph secondary-color">5. Saved millions with cost optimisations in AWS infrastructure practising FinOps.</p>
-          </div>
-        </div>
-      </div>
-      <div id="pe_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
-        <div class="w3-modal-content">
-          <div class="w3-container">
-            <p class="bold primary-color">Activities:</p>
-            <p class="paragraph secondary-color">1. Designed a system that provides a quick search over 2 PBs of genomic variants and analyses.</p>
-            <p class="paragraph secondary-color">2. Lead MVP implementation.</p>
-            <p class="paragraph secondary-color">3. Resulting system will decrease the price of genetic analysis by 30%.</p>
-            <p class="paragraph secondary-color">4. Designed system provisioning in both US and China AWS regions.</p>
-            <br />
-            <p class="bold primary-color">Development environment:</p>
-            <p class="paragraph secondary-color">AWS (EC2, RDS, ElasticSearch, CloudWatch, S3, CloudFormation), Terraform, Java, LucidChart, Gatling, GitLab, Jenkins.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="checklist-2" class="section gray-flat" sitemeta="[object Object]" activepage="Landing">
-      <div class="container text-center mb75">
-        <div class="col-12">
-          <h3 class="heading primary-color">How can I help your business?</h3>
+        <div class="flex col-12 spread"><a class="logo primary-color logo">Nickolay Laptev</a>
           <!---->
         </div>
       </div>
-      <div class="container flex">
-        <ul class="checklist col-12">
-          <li class="checklist-item flex center-horizontal spread pad10">
-            <p class="paragraph primary-color mr20">Solve complex problems</p> <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="noshrink svg-fill">
-              <g transform="translate(4.000000, 5.000000)">
-                <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
-              </g>
-            </svg>
-          </li>
-          <li class="checklist-item flex center-horizontal spread pad10">
-            <p class="paragraph primary-color mr20">Improve quality of your solution</p> <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="noshrink svg-fill">
-              <g transform="translate(4.000000, 5.000000)">
-                <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
-              </g>
-            </svg>
-          </li>
-          <li class="checklist-item flex center-horizontal spread pad10">
-            <p class="paragraph primary-color mr20">Automate delivery of your product</p> <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="noshrink svg-fill">
-              <g transform="translate(4.000000, 5.000000)">
-                <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
-              </g>
-            </svg>
-          </li>
-          <li class="checklist-item flex center-horizontal spread pad10">
-            <p class="paragraph primary-color mr20">Make development team effective</p> <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="noshrink svg-fill">
-              <g transform="translate(4.000000, 5.000000)">
-                <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
-              </g>
-            </svg>
-          </li>
-          <li class="checklist-item flex center-horizontal spread pad10">
-            <p class="paragraph primary-color mr20">Design a product from scratch</p> <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="noshrink svg-fill">
-              <g transform="translate(4.000000, 5.000000)">
-                <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
-              </g>
-            </svg>
-          </li>
-          <li class="checklist-item flex center-horizontal spread pad10">
-            <p class="paragraph primary-color mr20">Migrate to Cloud</p> <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="noshrink svg-fill">
-              <g transform="translate(4.000000, 5.000000)">
-                <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
-              </g>
-            </svg>
-          </li>
-          <li class="checklist-item flex center-horizontal spread pad10">
-            <p class="paragraph primary-color mr20">Train your team</p> <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="noshrink svg-fill">
-              <g transform="translate(4.000000, 5.000000)">
-                <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
-              </g>
-            </svg>
-          </li>
-        </ul>
+    </header>
+    <section class="section">
+      <div class="container mb40">
+        <div class="col-12 text-center">
+          <h1 class="heading-lrg primary-color">Need help with software project?</h1>
+          <h2 class="subheading secondary-color mt20">I solve hard technical and architectural problems and train teams
+            to solve them</h2>
+          <div class="mt40">
+            <a href="#submit-task" class="button mt10 mr10 mobile-text-center accent-bg primary-color"> <span> Share
+                your problem </span></a>
+            <a href="files/resume.pdf" target="_blank" class="button mobile-text-center mt10"> <span> Detailed resume
+              </span></a>
+            <a href="" class="button mt10 mr10 mobile-text-center accent-bg primary-color"
+              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/laptev/60min'});return false;"> <span>
+                Schedule
+                a call </span></a>
+          </div>
+        </div>
       </div>
       <!---->
     </section>
-    <section id="featuredin-3" class="section gray-white" sitemeta="[object Object]" activepage="Landing">
-      <div class="container text-center mb50">
-        <div class="col-12">
-          <h4 class="heading primary-color">Certificates I hold</h4>
-          <p class="subheading secondary-color mt20 builder-hoverable">Click an image to see details</p>
+  </div>
+  <section id="featuredin-1" class="section gray-white" sitemeta="[object Object]" activepage="Landing">
+    <div class="container text-center mb50">
+      <div class="col-12">
+        <h4 class="heading primary-color">Companies I helped</h4>
+        <p class="subheading secondary-color mt20 builder-hoverable">Click an image to see details</p>
+      </div>
+    </div>
+    <div class="container-lrg">
+      <div class="flex center-horizontal wrap center-vertical">
+        <div class="col-3 mobile-col-6 mt20"><img src="images/ibm.svg"
+            class="press-logo w3-hover-opacity clickable-image"
+            onclick="document.getElementById('ibm_details').style.display='block'"></div>
+        <div class="col-3 mobile-col-6 mt20"><img src="images/tr.jpg"
+            class="press-logo w3-hover-opacity clickable-image"
+            onclick="document.getElementById('tr_details').style.display='block'"></div>
+        <div class="col-3 mobile-col-6 mt20"><img src="images/inditex.png"
+            class="press-logo w3-hover-opacity clickable-image"
+            onclick="document.getElementById('inditex_details').style.display='block'"></div>
+        <div class="col-3 mobile-col-6 mt20"><img src="images/allianz.png"
+            class="press-logo w3-hover-opacity clickable-image"
+            onclick="document.getElementById('allianz_details').style.display='block'"></div>
+        <div class="col-3 mobile-col-6 mt20"><img src="images/accenture.svg"
+            class="press-logo w3-hover-opacity clickable-image"
+            onclick="document.getElementById('accenture_details').style.display='block'"></div>
+        <div class="col-3 mobile-col-6 mt20"><img src="images/n26.png"
+            class="press-logo w3-hover-opacity clickable-image"
+            onclick="document.getElementById('n26_details').style.display='block'"></div>
+        <div class="col-3 mobile-col-6 mt20"><img src="images/jive.png"
+            class="press-logo w3-hover-opacity clickable-image"
+            onclick="document.getElementById('jive_details').style.display='block'"></div>
+        <div class="col-3 mobile-col-6 mt20"><img src="images/upwork.svg"
+            class="press-logo w3-hover-opacity clickable-image"
+            onclick="document.getElementById('upwork_details').style.display='block'"></div>
+        <div class="col-3 mobile-col-6 mt20"><img src="images/aci.jpeg"
+            class="press-logo w3-hover-opacity clickable-image"
+            onclick="document.getElementById('aci_details').style.display='block'"></div>
+        <div class="col-3 mobile-col-6 mt20"><img src="images/s7.png"
+            class="press-logo w3-hover-opacity clickable-image"
+            onclick="document.getElementById('s7_details').style.display='block'"></div>
+        <div class="col-3 mobile-col-6 mt20"><img src="images/df.png"
+            class="press-logo w3-hover-opacity clickable-image"
+            onclick="document.getElementById('df_details').style.display='block'"></div>
+        <div class="col-3 mobile-col-6 mt20"><img src="images/pe.png"
+            class="press-logo w3-hover-opacity clickable-image"
+            onclick="document.getElementById('pe_details').style.display='block'"></div>
+      </div>
+    </div>
+    <div id="ibm_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <p class="bold primary-color">Activities:</p>
+          <p class="paragraph secondary-color">1. Technical guidance of contractors.</p>
+          <p class="paragraph secondary-color">2. Increased code coverage from 0 to 80%, introduced integration testing.
+          </p>
+          <p class="paragraph secondary-color">3. Redesigned core part of a system to make it more testable, extensible
+            and maintainable.</p>
+          <p class="paragraph secondary-color">4. Made the system consistent and removed concurrency issues.</p>
+          <p class="paragraph secondary-color">5. Improved a performance of the most popular use cases in 3 times.</p>
+          <p class="paragraph secondary-color">6. Final vote on choosing technical approaches.</p>
+          <br />
+          <p class="bold primary-color">Development environment:</p>
+          <p class="paragraph secondary-color">IBM Java (J9), Eclipse IDE, Eclipse RCP, Eclipse Equinox, OSGI, RTC,
+            REST, Apache Jena, JUnit.</p>
         </div>
       </div>
-      <div class="container-lrg">
-        <div class="flex center-horizontal wrap center-vertical">
-          <div class="col-3 mobile-col-6 mt20"><a href="https://www.youracclaim.com/badges/fc81a584-58b2-4b8c-a6e1-7e6e727b2c6d/public_url" target="_blank"><img src="images/aws.png" class="press-logo w3-hover-opacity clickable-image"></a></div>
-          <div class="col-3 mobile-col-6 mt20"><a href="https://www.youracclaim.com/badges/6b4eb0cd-b984-48c3-af84-90ad1cc3019d/public_url" target="_blank"><img src="images/ocp.png" class="press-logo w3-hover-opacity clickable-image"></a></div>
-          <div class="col-3 mobile-col-6 mt20"><a href="https://www.youracclaim.com/badges/8db8b73a-b0a7-4689-8ec4-d1c9d7ccc780/public_url" target="_blank"><img src="images/oca.jpeg" class="press-logo w3-hover-opacity clickable-image"></a></div>
-          <div class="col-3 mobile-col-6 mt20"><a href="https://university.mongodb.com/certification/display_certificate?csrfmiddlewaretoken=4ZJKF0qEE8ID6je3IVXvBUopHzkjFzFDQHqKYXL0a34uYVZW7zbLhOyYvEGyEPJl&license1=137&license2=062&license3=664" target="_blank"><img src="images/mongodb.png" class="press-logo w3-hover-opacity clickable-image"></a></div>
-          <div class="col-3 mobile-col-6 mt20"><a target="_blank"><img src="images/ibm_pm.png" class="press-logo"></a></div>
-          <div class="col-3 mobile-col-6 mt20"><a href="https://www.coursera.org/account/accomplishments/verify/YXSJU53FRUHK" target="_blank"><img src="images/ml.jpg" class="press-logo w3-hover-opacity clickable-image"></a></div>
-          <div class="col-3 mobile-col-6 mt20"><a href="https://www.youracclaim.com/badges/d24a9ad1-3ab1-4432-95de-aa87e45cd6d2" target="_blank"><img src="images/ibm_bd_badge.png" class="press-logo w3-hover-opacity clickable-image"></a></div>
-          <div class="col-3 mobile-col-6 mt20"><a href="https://www.youracclaim.com/badges/e3a2db9c-63f2-4286-b6b0-5a2eeb4f26f0" target="_blank"><img src="images/ibm_bd_badge.png" class="press-logo w3-hover-opacity clickable-image"></a></div>
-          <div class="col-3 mobile-col-6 mt20"><a href="https://www.tmforum.org/training-certification-leaderboard/exams-search/?sf_leaderboard_search[individual]=Nikolai+Laptev&sf_leaderboard_search[company]=&sf_leaderboard_search[certification]=Career+Certifications|Business+Development+Manager" target="_blank"><img src="images/tm-bdm.png" class="press-logo w3-hover-opacity clickable-image"></a></div>
-          <div class="col-3 mobile-col-6 mt20"><a href="https://www.tmforum.org/training-certification-leaderboard/exams-search/?sf_leaderboard_search[individual]=Nikolai+Laptev&sf_leaderboard_search[company]=&sf_leaderboard_search[certification]=Career+Certifications|Frameworx+Transformation+Manager" target="_blank"><img src="images/tm-ftm.png" class="press-logo w3-hover-opacity clickable-image"></a></div>
-          <div class="col-3 mobile-col-6 mt20"><a href="https://www.tmforum.org/training-certification-leaderboard/exams-search/?sf_leaderboard_search[individual]=Nikolai+Laptev&sf_leaderboard_search[company]=&sf_leaderboard_search[certification]=Career+Certifications|Platform+Development+Manager" target="_blank"><img src="images/tm-pdm.png" class="press-logo w3-hover-opacity clickable-image"></a></div>
+    </div>
+    <div id="tr_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <p class="bold primary-color">Activities:</p>
+          <p class="paragraph secondary-color">1. Root cause analysis of performance and stability issues in
+            OneSourceTax product.</p>
+          <p class="paragraph secondary-color">2. Created a plan for improvements and drove it till completion.</p>
+          <p class="paragraph secondary-color">3. Defined data management strategy.</p>
+          <br />
+          <p class="bold primary-color">Development environment:</p>
+          <p class="paragraph secondary-color">AWS (Lambda, EC2, S3, RDS, PostgreSQL, SQS, SNS, StepFunctions), DataDog,
+            LucidChart, Go, pgbench, sysbench.</p>
         </div>
       </div>
-    </section>
-    <section id="faq-4" class="section gray-flat" sitemeta="[object Object]" activepage="Landing">
-      <div class="container">
-        <div class="col-12 text-center">
-          <h3 class="heading primary-color">
-            Frequently Asked Questions
-          </h3>
-          <p class="subheading secondary-color mt20">Can't find an answer? Don't hesitate to reach out!</p>
+    </div>
+    <div id="inditex_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <p class="bold primary-color">Activities:</p>
+          <p class="paragraph secondary-color">1. Assessed MVP version of a system to distribute clothes between its
+            stores.</p>
+          <p class="paragraph secondary-color">2. Brought MVP to fully functional and production ready service.</p>
+          <p class="paragraph secondary-color">3. Fixed core issues in system architecture.</p>
+          <p class="paragraph secondary-color">4. Improved security, scalability, availability, resilience and
+            performance.</p>
+          <br />
+          <p class="bold primary-color">Development environment:</p>
+          <p class="paragraph secondary-color">LucidChart, Java, OpenShift, MongoDB, JMeter, InfluxDB, Grafana, Graylog.
+          </p>
         </div>
       </div>
-      <div class="container">
-        <div class="col-12 mt40">
-          <div class="faq pad20"><b class="bold primary-color">
-              Where are you located?
-            </b>
-            <p class="paragraph secondary-color">
-              I live in Georgia and work remotely. I'm open to onsite collaboration too.
-            </p>
-          </div>
-          <div class="faq pad20"><b class="bold primary-color">
-              What is a price of your services?
-            </b>
-            <p class="paragraph secondary-color">
-              It depends on the value I can deliver to your business.
-            </p>
-          </div>
-          <div class="faq pad20"><b class="bold primary-color">
-              Do you work on hourly basis or per project?
-            </b>
-            <p class="paragraph secondary-color">
-              Generally I work per project, in exceptional cases I can work on hourly basis.
-            </p>
-          </div>
-          <div class="faq pad20"><b class="bold primary-color">
-              Do you work only with enterprise customers?
-            </b>
-            <p class="paragraph secondary-color">
-              No, I work with everybody including startups.
-            </p>
-          </div>
-          <div class="faq pad20"><b class="bold primary-color">
-              Do you specialise on a concrete technical and business field?
-            </b>
-            <p class="paragraph secondary-color">
-              No, I'm open to all fields.
-            </p>
-          </div>
-          <div class="faq pad20"><b class="bold primary-color">
-              Do you provide services as individual contributor or as an organisation?
-            </b>
-            <p class="paragraph secondary-color">
-              Generally as individual contributor. In exceptional cases I can form a team for a project.
-            </p>
-          </div>
+    </div>
+    <div id="allianz_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <p class="bold primary-color">Activities:</p>
+          <p class="paragraph secondary-color">Created a high level architecture of OneFront and estimated
+            implementation effort for it for a tender. The client liked it and moved further with me.</p>
+          <br />
+          <p class="bold primary-color">Development environment:</p>
+          <p class="paragraph secondary-color">Private Cloud, LucidChart.</p>
         </div>
       </div>
-    </section>
-    <section class="section gray-white" sitemeta="[object Object]" activepage="Landing">
-      <div id="submit-task" class="container text-center mb40">
-        <div class="col-12 text-center">
-          <h4 class="heading primary-color builder-hoverable">Share your problem</h4>
+    </div>
+    <div id="accenture_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <p class="bold primary-color">Activities:</p>
+          <p class="paragraph secondary-color">1. Created a plan to solve quality issues in one SaaS product including
+            creation of standards and acceptance criteria.</p>
+          <p class="paragraph secondary-color">2. Lead an acceptance of the plan from stakeholders, provided constant
+            assistance during plan implementation.</p>
+          <p class="paragraph secondary-color">3. Acted as a technical expert in that product.</p>
+          <p class="paragraph secondary-color">4. Acted as a security expert in all products.</p>
+          <p class="paragraph secondary-color">5. Migrated Jenkins based CI builds for a core project to CD pipeline
+            including cleaning ineffective solutions and adapting to new project requirements.</p>
+          <br />
+          <p class="bold primary-color">Development environment:</p>
+          <p class="paragraph secondary-color">SAP Cloud Platform, Cloud Foundry, Java, Jenkins, Docker.</p>
         </div>
       </div>
-      <div class="container flex center-vertical">
-        <div class="col-8">
-          <div class="card pad30 builder-hoverable">
-            <form id="submit-form">
-              <div class="paragraph primary-color pad10">
-                <label for="name">Full name *</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Please enter your full name" required>
-              </div>
-              <div class="paragraph primary-color pad10">
-                <label for="email">Email address *</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Please enter your email" required>
-              </div>
-              <div class="paragraph primary-color pad10">
-                <label for="details">What is a problem? *</label><br>
-                <textarea class="form-control" id="details" name="details" rows="3" required></textarea>
-              </div>
-              <div class="paragraph primary-color pad10">
-                <label for="attached-details">Optional file with details (< 256 KB)</label>
-                <input type="file" class="form-control-file" id="attached-details" name="attached-details">
-              </div>
-              <div id="feedback" style = "display:none">
-                  <span style="color:#008000"> Thank you. I've received your submission and will handle it within 1 business day. </span>
-              </div>
-              <div id="error-big-file" style = "display:none">
-                <span style="color:#801700"> Please use a file less than 256 KB or paste a link to it in a form above </span>
-              </div>
-              <button id="submit-button" class="button mt10 builder-hoverable button__full mobile-text-center accent-bg primary-color"><span> Submit </span></button>
-            </form>
-          </div>
+    </div>
+    <div id="n26_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <p class="bold primary-color">Activities:</p>
+          <p class="paragraph secondary-color">1. Identified bottlenecks and created a plan of improvements.</p>
+          <p class="paragraph secondary-color">2. Removed redundancy from development process.</p>
+          <p class="paragraph secondary-color">3. Introduced measuring performance of a team and individual
+            contributors.</p>
+          <p class="paragraph secondary-color">4. Fixed broken Continuous Delivery pipeline for several services.</p>
+          <p class="paragraph secondary-color">5. Provided technical guidance for introducing support of US market.</p>
+          <br />
+          <p class="bold primary-color">Development environment:</p>
+          <p class="paragraph secondary-color">AWS, Docker, Java, Spring, Netflix OSS, Jenkins, Microservices.</p>
         </div>
       </div>
-    </section>
-    <footer id="footer-5" class="section text-center gray-flat" sitemeta="[object Object]" activepage="Landing">
-      <div class="container col-12">
+    </div>
+    <div id="jive_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <p class="bold primary-color">Activities:</p>
+          <p class="paragraph secondary-color">1. Implemented the most complex and critical tasks for several projects.
+            Customers had been waiting for 2+ years for completion of some of them.</p>
+          <p class="paragraph secondary-color">2. Organised delivery process from resource and product perspective for
+            lack of resource and product management for several projects.</p>
+          <p class="paragraph secondary-color">3. Guarded high technical quality in products.</p>
+          <br />
+          <p class="bold primary-color">Development environment:</p>
+          <p class="paragraph secondary-color">Java, Spring, Apache Struts, JUnit, Postgresql, Apache Kafka, Jenkins,
+            Docker, Maven, Intellij Idea.</p>
+        </div>
+      </div>
+    </div>
+    <div id="upwork_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <p class="bold primary-color">Activities:</p>
+          <p class="paragraph secondary-color">Designed and implemented a core part of A/B testing system for Upwork
+            platform.</p>
+          <br />
+          <p class="bold primary-color">Development environment:</p>
+          <p class="paragraph secondary-color">Java, Dropwizard, AWS(EC2, DynamoDB, Redshift), Netflix OSS (Eureka,
+            Hystrix, EVCache), Docker, Elastic Kibana, Grafana, REST, JUnit, PITest, Intellij Idea, Microservices.</p>
+        </div>
+      </div>
+    </div>
+    <div id="aci_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <p class="bold primary-color">Activities:</p>
+          <p class="paragraph secondary-color">1. Lead several teams of 3 software engineers and QAs.</p>
+          <p class="paragraph secondary-color">2. Final vote on choosing technical and organisational approaches.</p>
+          <p class="paragraph secondary-color">3. Implemented core parts of payments framework that is used by top 60
+            banks in the world.</p>
+          <p class="paragraph secondary-color">4. Created a system for automated functional testing of online banking
+            that made hundreds of manual QAs redundant.</p>
+          <p class="paragraph secondary-color">5. Lead migration from .Net to Java stack for office employees including
+            organising trainings and workshops.</p>
+          <p class="paragraph secondary-color">6. Interviewed core people for a new office.</p>
+          <br />
+          <p class="bold primary-color">Development environment:</p>
+          <p class="paragraph secondary-color">Java, Perl, Groovy, Oracle, Maven, Sonar, Bamboo, JUnit, Selenium,
+            JMockit, Jira, Intellij Idea IDE, Eclipse IDE, Netbeans IDE, Linux (Red Hat).</p>
+        </div>
+      </div>
+    </div>
+    <div id="s7_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <p class="bold primary-color">Activities:</p>
+          <p class="paragraph secondary-color">1. Extracted architecture vision from heads and visualised it for 7
+            products.</p>
+          <p class="paragraph secondary-color">2. Recommended improvements for 7 products.</p>
+          <p class="paragraph secondary-color">3. Designed notifications platform from scratch that sends messages to
+            12+ millions of passengers.</p>
+          <p class="paragraph secondary-color">4. Technical guidance for all products in the company and child
+            companies.</p>
+          <p class="paragraph secondary-color">5. Organised and lead learning activities to fill gaps in architecture
+            skills in development teams.</p>
+          <p class="paragraph secondary-color">6. Assisted with root cause analysis for the most sophisticated issues
+            happening in the company daily.</p>
+          <br />
+          <p class="bold primary-color">Development environment:</p>
+          <p class="paragraph secondary-color">Kubernetes, Kafka, Apache Airflow, Java, PostgreSQL, Redis, RedisGraph,
+            ElasticSearch, Hazelcast, MongoDB, LucidChart.</p>
+        </div>
+      </div>
+    </div>
+    <div id="df_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <p class="bold primary-color">Activities:</p>
+          <p class="paragraph secondary-color">1. Made the most important technical decisions in data driven way in
+            child companies with a portfolio of hundreds of products (including Jive, FogBugz, Sococo, BiznessApps,
+            Engine Yard, Kayako, CloudFix).</p>
+          <p class="paragraph secondary-color">2. Technical due diligence during pre-acquisitions.</p>
+          <p class="paragraph secondary-color">3. Architecture governance for all products.</p>
+          <p class="paragraph secondary-color">4. Simplified overgrown products dramatically by concentrating on core
+            value.</p>
+          <p class="paragraph secondary-color">5. Saved millions with cost optimisations in AWS infrastructure
+            practising FinOps.</p>
+        </div>
+      </div>
+    </div>
+    <div id="pe_details" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <p class="bold primary-color">Activities:</p>
+          <p class="paragraph secondary-color">1. Designed a system that provides a quick search over 2 PBs of genomic
+            variants and analyses.</p>
+          <p class="paragraph secondary-color">2. Lead MVP implementation.</p>
+          <p class="paragraph secondary-color">3. Resulting system will decrease the price of genetic analysis by 30%.
+          </p>
+          <p class="paragraph secondary-color">4. Designed system provisioning in both US and China AWS regions.</p>
+          <br />
+          <p class="bold primary-color">Development environment:</p>
+          <p class="paragraph secondary-color">AWS (EC2, RDS, ElasticSearch, CloudWatch, S3, CloudFormation), Terraform,
+            Java, LucidChart, Gatling, GitLab, Jenkins.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="checklist-2" class="section gray-flat" sitemeta="[object Object]" activepage="Landing">
+    <div class="container text-center mb75">
+      <div class="col-12">
+        <h3 class="heading primary-color">How can I help your business?</h3>
         <!---->
-        <div>
-          <a href="https://twitter.com/NickolayLaptev" target="_blank" class="socialicons accent-bg twitter"></a>
-          <a href="mailto:nickolay.laptev@gmail.com" class="socialicons accent-bg email"></a>
-          <a href="https://linkedin.com/in/nickolaylaptev/" target="_blank" class="socialicons accent-bg linkedin"></a>
-          <a href="https://github.com/laptevn" target="_blank" class="socialicons accent-bg github"></a>
-          <a href="https://medium.com/@nickolay.laptev" target="_blank" class="socialicons accent-bg medium"></a>
-        </div>
-        <!---->
       </div>
-    </footer>
-  </body>
+    </div>
+    <div class="container flex">
+      <ul class="checklist col-12">
+        <li class="checklist-item flex center-horizontal spread pad10">
+          <p class="paragraph primary-color mr20">Solve complex problems</p> <svg width="22px" height="22px"
+            viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" class="noshrink svg-fill">
+            <g transform="translate(4.000000, 5.000000)">
+              <path
+                d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z">
+              </path>
+            </g>
+          </svg>
+        </li>
+        <li class="checklist-item flex center-horizontal spread pad10">
+          <p class="paragraph primary-color mr20">Improve quality of your solution</p> <svg width="22px" height="22px"
+            viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" class="noshrink svg-fill">
+            <g transform="translate(4.000000, 5.000000)">
+              <path
+                d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z">
+              </path>
+            </g>
+          </svg>
+        </li>
+        <li class="checklist-item flex center-horizontal spread pad10">
+          <p class="paragraph primary-color mr20">Automate delivery of your product</p> <svg width="22px" height="22px"
+            viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" class="noshrink svg-fill">
+            <g transform="translate(4.000000, 5.000000)">
+              <path
+                d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z">
+              </path>
+            </g>
+          </svg>
+        </li>
+        <li class="checklist-item flex center-horizontal spread pad10">
+          <p class="paragraph primary-color mr20">Make development team effective</p> <svg width="22px" height="22px"
+            viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" class="noshrink svg-fill">
+            <g transform="translate(4.000000, 5.000000)">
+              <path
+                d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z">
+              </path>
+            </g>
+          </svg>
+        </li>
+        <li class="checklist-item flex center-horizontal spread pad10">
+          <p class="paragraph primary-color mr20">Design a product from scratch</p> <svg width="22px" height="22px"
+            viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" class="noshrink svg-fill">
+            <g transform="translate(4.000000, 5.000000)">
+              <path
+                d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z">
+              </path>
+            </g>
+          </svg>
+        </li>
+        <li class="checklist-item flex center-horizontal spread pad10">
+          <p class="paragraph primary-color mr20">Migrate to Cloud</p> <svg width="22px" height="22px"
+            viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" class="noshrink svg-fill">
+            <g transform="translate(4.000000, 5.000000)">
+              <path
+                d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z">
+              </path>
+            </g>
+          </svg>
+        </li>
+        <li class="checklist-item flex center-horizontal spread pad10">
+          <p class="paragraph primary-color mr20">Train your team</p> <svg width="22px" height="22px"
+            viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" class="noshrink svg-fill">
+            <g transform="translate(4.000000, 5.000000)">
+              <path
+                d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z">
+              </path>
+            </g>
+          </svg>
+        </li>
+      </ul>
+    </div>
+    <!---->
+  </section>
+  <section id="featuredin-3" class="section gray-white" sitemeta="[object Object]" activepage="Landing">
+    <div class="container text-center mb50">
+      <div class="col-12">
+        <h4 class="heading primary-color">Certificates I hold</h4>
+        <p class="subheading secondary-color mt20 builder-hoverable">Click an image to see details</p>
+      </div>
+    </div>
+    <div class="container-lrg">
+      <div class="flex center-horizontal wrap center-vertical">
+        <div class="col-3 mobile-col-6 mt20"><a
+            href="https://www.youracclaim.com/badges/fc81a584-58b2-4b8c-a6e1-7e6e727b2c6d/public_url"
+            target="_blank"><img src="images/aws.png" class="press-logo w3-hover-opacity clickable-image"></a></div>
+        <div class="col-3 mobile-col-6 mt20"><a
+            href="https://www.youracclaim.com/badges/6b4eb0cd-b984-48c3-af84-90ad1cc3019d/public_url"
+            target="_blank"><img src="images/ocp.png" class="press-logo w3-hover-opacity clickable-image"></a></div>
+        <div class="col-3 mobile-col-6 mt20"><a
+            href="https://www.youracclaim.com/badges/8db8b73a-b0a7-4689-8ec4-d1c9d7ccc780/public_url"
+            target="_blank"><img src="images/oca.jpeg" class="press-logo w3-hover-opacity clickable-image"></a></div>
+        <div class="col-3 mobile-col-6 mt20"><a
+            href="https://university.mongodb.com/certification/display_certificate?csrfmiddlewaretoken=4ZJKF0qEE8ID6je3IVXvBUopHzkjFzFDQHqKYXL0a34uYVZW7zbLhOyYvEGyEPJl&license1=137&license2=062&license3=664"
+            target="_blank"><img src="images/mongodb.png" class="press-logo w3-hover-opacity clickable-image"></a></div>
+        <div class="col-3 mobile-col-6 mt20"><a target="_blank"><img src="images/ibm_pm.png" class="press-logo"></a>
+        </div>
+        <div class="col-3 mobile-col-6 mt20"><a
+            href="https://www.coursera.org/account/accomplishments/verify/YXSJU53FRUHK" target="_blank"><img
+              src="images/ml.jpg" class="press-logo w3-hover-opacity clickable-image"></a></div>
+        <div class="col-3 mobile-col-6 mt20"><a
+            href="https://www.youracclaim.com/badges/d24a9ad1-3ab1-4432-95de-aa87e45cd6d2" target="_blank"><img
+              src="images/ibm_bd_badge.png" class="press-logo w3-hover-opacity clickable-image"></a></div>
+        <div class="col-3 mobile-col-6 mt20"><a
+            href="https://www.youracclaim.com/badges/e3a2db9c-63f2-4286-b6b0-5a2eeb4f26f0" target="_blank"><img
+              src="images/ibm_bd_badge.png" class="press-logo w3-hover-opacity clickable-image"></a></div>
+        <div class="col-3 mobile-col-6 mt20"><a
+            href="https://www.tmforum.org/training-certification-leaderboard/exams-search/?sf_leaderboard_search[individual]=Nikolai+Laptev&sf_leaderboard_search[company]=&sf_leaderboard_search[certification]=Career+Certifications|Business+Development+Manager"
+            target="_blank"><img src="images/tm-bdm.png" class="press-logo w3-hover-opacity clickable-image"></a></div>
+        <div class="col-3 mobile-col-6 mt20"><a
+            href="https://www.tmforum.org/training-certification-leaderboard/exams-search/?sf_leaderboard_search[individual]=Nikolai+Laptev&sf_leaderboard_search[company]=&sf_leaderboard_search[certification]=Career+Certifications|Frameworx+Transformation+Manager"
+            target="_blank"><img src="images/tm-ftm.png" class="press-logo w3-hover-opacity clickable-image"></a></div>
+        <div class="col-3 mobile-col-6 mt20"><a
+            href="https://www.tmforum.org/training-certification-leaderboard/exams-search/?sf_leaderboard_search[individual]=Nikolai+Laptev&sf_leaderboard_search[company]=&sf_leaderboard_search[certification]=Career+Certifications|Platform+Development+Manager"
+            target="_blank"><img src="images/tm-pdm.png" class="press-logo w3-hover-opacity clickable-image"></a></div>
+      </div>
+    </div>
+  </section>
+  <section id="faq-4" class="section gray-flat" sitemeta="[object Object]" activepage="Landing">
+    <div class="container">
+      <div class="col-12 text-center">
+        <h3 class="heading primary-color">
+          Frequently Asked Questions
+        </h3>
+        <p class="subheading secondary-color mt20">Can't find an answer? Don't hesitate to reach out!</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="col-12 mt40">
+        <div class="faq pad20"><b class="bold primary-color">
+            Where are you located?
+          </b>
+          <p class="paragraph secondary-color">
+            I live in Georgia and work remotely. I'm open to onsite collaboration too.
+          </p>
+        </div>
+        <div class="faq pad20"><b class="bold primary-color">
+            What is a price of your services?
+          </b>
+          <p class="paragraph secondary-color">
+            It depends on the value I can deliver to your business.
+          </p>
+        </div>
+        <div class="faq pad20"><b class="bold primary-color">
+            Do you work on hourly basis or per project?
+          </b>
+          <p class="paragraph secondary-color">
+            Generally I work per project, in exceptional cases I can work on hourly basis.
+          </p>
+        </div>
+        <div class="faq pad20"><b class="bold primary-color">
+            Do you work only with enterprise customers?
+          </b>
+          <p class="paragraph secondary-color">
+            No, I work with everybody including startups.
+          </p>
+        </div>
+        <div class="faq pad20"><b class="bold primary-color">
+            Do you specialise on a concrete technical and business field?
+          </b>
+          <p class="paragraph secondary-color">
+            No, I'm open to all fields.
+          </p>
+        </div>
+        <div class="faq pad20"><b class="bold primary-color">
+            Do you provide services as individual contributor or as an organisation?
+          </b>
+          <p class="paragraph secondary-color">
+            Generally as individual contributor. In exceptional cases I can form a team for a project.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section gray-white" sitemeta="[object Object]" activepage="Landing">
+    <div id="submit-task" class="container text-center mb40">
+      <div class="col-12 text-center">
+        <h4 class="heading primary-color builder-hoverable">Share your problem</h4>
+      </div>
+    </div>
+    <div class="container flex center-vertical">
+      <div class="col-8">
+        <div class="card pad30 builder-hoverable">
+          <form id="submit-form">
+            <div class="paragraph primary-color pad10">
+              <label for="name">Full name *</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Please enter your full name"
+                required>
+            </div>
+            <div class="paragraph primary-color pad10">
+              <label for="email">Email address *</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Please enter your email"
+                required>
+            </div>
+            <div class="paragraph primary-color pad10">
+              <label for="details">What is a problem? *</label><br>
+              <textarea class="form-control" id="details" name="details" rows="3" required></textarea>
+            </div>
+            <div class="paragraph primary-color pad10">
+              <label for="attached-details">Optional file with details (< 256 KB)</label>
+                  <input type="file" class="form-control-file" id="attached-details" name="attached-details">
+            </div>
+            <div id="feedback" style="display:none">
+              <span style="color:#008000"> Thank you. I've received your submission and will handle it within 1 business
+                day. </span>
+            </div>
+            <div id="error-big-file" style="display:none">
+              <span style="color:#801700"> Please use a file less than 256 KB or paste a link to it in a form above
+              </span>
+            </div>
+            <button id="submit-button"
+              class="button mt10 builder-hoverable button__full mobile-text-center accent-bg primary-color"><span>
+                Submit </span></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer-5" class="section text-center gray-flat" sitemeta="[object Object]" activepage="Landing">
+    <div class="container col-12">
+      <!---->
+      <div>
+        <a href="https://twitter.com/NickolayLaptev" target="_blank" class="socialicons accent-bg twitter"></a>
+        <a href="mailto:nickolay.laptev@gmail.com" class="socialicons accent-bg email"></a>
+        <a href="https://linkedin.com/in/nickolaylaptev/" target="_blank" class="socialicons accent-bg linkedin"></a>
+        <a href="https://github.com/laptevn" target="_blank" class="socialicons accent-bg github"></a>
+        <a href="https://medium.com/@nickolay.laptev" target="_blank" class="socialicons accent-bg medium"></a>
+      </div>
+      <!---->
+    </div>
+  </footer>
+</body>
+
 </html>
